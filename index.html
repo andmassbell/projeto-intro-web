@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoegaze Search</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="/index.css">
 </head>
 <body>
@@ -13,41 +13,32 @@
     <header id="header">
         <h1 id="titulo">SHOEGAZE SEARCH</h1>
     </header>
-
+    
     <main>
-        
         <form id="nav-botao">
             <label for="busca"></label>
             <input id="input" type="text" name="busca" id="id-busca" placeholder="Insira uma banda shoegaze">
-            <button id="button1" type="submit">Buscar</button>
+            <button onclick="encontraBanda(event)" id="button1" type="submit">Buscar</button>
         </form>
-
+        
         <div id="itens">
-        <section id="item-1">
-            <img id="img1" src="/assets/Slowdive.webp" alt="Slowdive">
-            <ul>
-                <li> Nome: <a class="color-link" href="https://pt.wikipedia.org/wiki/Slowdive" target= "_blank">Slowdive.</a> </li>
-                <li> Fundação: Há 33 anos. </li>
-                <li> Em atividade: Ainda pelos palcos. </li>
-                <li> Músicas para conhecer: Alison, When The Sun Hits, Sing. </li>
+            
+        <section class="banda" id="item-1">
+            <img id="img1"  src="/assets/Slowdive.webp" alt="Slowdive">
+            <ul id="banda1">
+                <li> Nome: <a class="color-link" href="https://pt.wikipedia.org/wiki/Slowdive"  target= "_blank">SLOWDIVE</a> </li>
             </ul>
         </section>
-        <section id="item-2">
+        <section class="banda" id="item-2">
             <img id="img2" src="/assets/Jesus.webp" alt="The Jesus And Mary Chain">
-            <ul>
-                <li> Nome: <a class="color-link" href="https://pt.wikipedia.org/wiki/The_Jesus_and_Mary_Chain" target="_blank"> The Jesus And Mary Chain.</a></ç>
-                <li> Fundação: Há 38 anos. </li>
-                <li> Em atividade: Ainda pelos palcos. </li>
-                <li> Músicas para conhecer: Just Like Honey, Darklands, Some Candy Talking. </li>
+            <ul id="banda2">
+                <li> Nome: <a class="color-link" href="https://pt.wikipedia.org/wiki/The_Jesus_and_Mary_Chain" target="_blank">THE JESUS AND MARY CHAIN</a></ç>
             </ul>
         </section>
-        <section id="item-3">
-            <img id="img3" src="/assets/MBV.webp" alt="My Bloody Valentine">
-            <ul>
-                <li> Nome: <a class="color-link" href="https://pt.wikipedia.org/wiki/My_Bloody_Valentine_(banda)" target="_blank">My Bloody Valentine.</a></li>
-                <li> Fundação: Há 39 anos. </li>
-                <li> Em atividade: Fora dos palcos. </li>
-                <li> Músicas para conhecer: Loomer, Only Shallow, Sometimes. </li>
+        <section class="banda" id="item-3">
+            <img id="img3" src="/assets/My Bloody Valentine.jpg" alt="My Bloody Valentine">
+            <ul id="banda3">
+                <li> Nome: <a class="color-link" href="https://pt.wikipedia.org/wiki/My_Bloody_Valentine_(banda)" target="_blank">MY BLOODY VALENTINE</a></li>
             </ul>
         </section>
         
